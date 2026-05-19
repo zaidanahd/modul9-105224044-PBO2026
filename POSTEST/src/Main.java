@@ -1,21 +1,21 @@
 public class Main {
-    public static void main(String[] args) throws Exception {
-        Dokter dokter1 = new Dokter("Dokter 1", "Dokter Umum");
-        Dokter dokter2 = new Dokter("Dokter 2", "Dokter Gigi");
+    public static void main(String[] args) {
+        Ban[] setBanBaru = new Ban[4];
+        setBanBaru[0] = new Ban("tubles", 15);
+        setBanBaru[1] = new Ban("tubles", 15);
+        setBanBaru[2] = new Ban("tubles", 15);
+        setBanBaru[3] = new Ban("tubles", 15);
 
-        Pasien pasien1 = new Pasien("Pasien 1", "20 tahun");
-        Pasien pasien2 = new Pasien("Pasien 2", "25 tahun");
+        Mobil mobilPrototipe = new Mobil("Mustang", "Abu-abu", "Speed v8", 6000);
 
-        dokter1.periksaPasien(pasien2);
+        mobilPrototipe.pasangSetBan(setBanBaru);
 
-        RumahSakit sehatSelalu = new RumahSakit("RS Sehat Selalu");
+        mobilPrototipe.tampilkanSpesifikasi();
 
-        sehatSelalu.addDokter(dokter1);
-        sehatSelalu.addDokter(dokter2);
+        Montir montirSenior = new Montir("Montir 001", "Zaidan");
+        montirSenior.lakukanQualityControl(mobilPrototipe);
 
-        sehatSelalu.tampilkanRuangan();
-        sehatSelalu.daftarDokter();
+        mobilPrototipe = null;
 
-        sehatSelalu = null;                                                                                                                                                                                                                                                                 
     }
 }
