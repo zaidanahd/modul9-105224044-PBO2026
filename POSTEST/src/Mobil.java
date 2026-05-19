@@ -1,5 +1,3 @@
-package POSTEST.src;
-
 public class Mobil {
     private String merkMobil;
     private String warna;

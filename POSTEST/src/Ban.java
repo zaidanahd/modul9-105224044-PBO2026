@@ -1,5 +1,3 @@
-package POSTEST.src;
-
 public class Ban {
     private String merk;
     private int ukuranRing;

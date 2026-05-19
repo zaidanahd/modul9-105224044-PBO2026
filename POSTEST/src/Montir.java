@@ -1,5 +1,3 @@
-package POSTEST.src;
-
 public class Montir {
     private String idMontir;
     private String nama;

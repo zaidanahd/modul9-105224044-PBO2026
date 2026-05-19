@@ -1,5 +1,3 @@
-package POSTEST.src;
-
 public class Mesin {
     private String nomorSeri;
     private int kapasitasCC;
