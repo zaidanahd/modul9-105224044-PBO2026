@@ -11,7 +11,7 @@ public String getnama(){
     return nama;
 }
 
-public int getUmur(){
+public String getUmur(){
     return Umur;
 }
 
